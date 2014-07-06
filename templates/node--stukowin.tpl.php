@@ -39,7 +39,12 @@
   <?php print render($content['wst']); ?>
   <?php print render($content['verantname']); ?>
   <?php print render($content['verantemail']); ?>
-  <?php print render($content['lvtypname']); ?>
+  <?php if( array_key_exists('lvtypname', $content)){
+  		 	print render($content['lvtypname']);
+  		}else{
+ 			print render($content['typname']);
+		} 
+   ?>
   <?php print render($content['lehrinhalte']); ?>
   <?php print render($content['ziele']); ?>
   
