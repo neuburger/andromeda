@@ -42,7 +42,7 @@
   <?php if( array_key_exists('lvtypname', $content)){
   		 	print render($content['lvtypname']);
   		}else{
- 			print render($content['typname']);
+ 			print render($content['typename']);
 		} 
    ?>
   <?php print render($content['lehrinhalte']); ?>
